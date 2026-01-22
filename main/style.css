@@ -181,7 +181,7 @@ p{
     min-height: 100vh;
     padding: 100px 20px;
    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+grid-template-columns: repeat(2, minmax(300px, 1fr));
     gap: 2vw;
 }
 .sub4{
@@ -494,3 +494,165 @@ background: linear-gradient(to left, #4edaed,
 
 
 
+
+
+
+  @media (max-width: 1200px) {
+            .img1 img {
+                width: 45%;
+            }
+            
+            .sub4 {
+                flex-direction: column;
+                text-align: center;
+            }.page4{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .para {
+                padding-right: 0;
+                margin-bottom: 20px;
+            }
+            .b1{
+                margin-right: 0;
+                margin-left: 40px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .nav-links {
+                gap: 15px;
+            }
+            
+            .nav-links a {
+                font-size: 1rem;
+                padding: 6px 12px;
+            }
+            
+            .sub1 h2 {
+                font-size: 2.8rem;
+            }
+            
+            .page3 {
+                grid-template-columns: 1fr;
+            }
+            
+            .page5 {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 15px;
+            }
+            
+            .logo-container {
+                margin-bottom: 15px;
+            }
+            
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .sub1 {
+                padding: 30px 20px;
+                margin-top: 150px;
+            }
+            
+            .sub1 h2 {
+                font-size: 2.2rem;
+            }
+            
+            .sub1 p {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .img1 {
+                flex-direction: column;
+            }
+            
+            .img1 img {
+                width: 100%;
+                max-width: 500px;
+            }
+            
+            .b1 {
+                min-width: 100%;
+            }
+            
+            .contact, .contact1 {
+                padding: 30px 20px;
+            }
+            
+            .sub2, .sub4, .image {
+                padding: 30px 20px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .sub1 h2 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .para h3 {
+                font-size: 1.5rem;
+            }
+            
+            .image h2 {
+                font-size: 1.8rem;
+            }
+            
+            .contact h2, .contact1 h2 {
+                font-size: 1.8rem;
+            }
+            
+            .nav-links {
+                gap: 10px;
+            }
+            
+            .nav-links a {
+                font-size: 0.9rem;
+                padding: 5px 10px;
+            }
+            
+            .tag-container {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .sub1 h2 {
+                font-size: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .page3 {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .img1 img {
+                height: 200px;
+            }
+            
+            .image2 {
+                width: 150px;
+                height: 150px;
+            }
+        }
